@@ -1,0 +1,52 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(powershell -Command \"Get-Content ''C:\\MyPython\\_QtDesigner\\__CURRENT\\_入力アプリ画像付き_給与検定\\MAIN_APP.py'' | Measure-Object -Line\")",
+      "Bash(powershell -Command \"$content = Get-Content ''C:\\MyPython\\_QtDesigner\\__CURRENT\\_入力アプリ画像付き_給与検定\\MAIN_APP.py'' -Raw; $content -split ''(?m)^\\s{4}def '' | Measure-Object | Select-Object -ExpandProperty Count\")",
+      "Bash(powershell:*)",
+      "Bash(python _mode_config.py:*)",
+      "Bash(python test_mode_config.py:*)",
+      "Bash(python:*)",
+      "Bash(mkdir:*)",
+      "Bash(git mv:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(timeout 10 python:*)",
+      "Bash(find:*)",
+      "Bash(timeout 5 python:*)",
+      "Bash(timeout 5 uv run:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(where.exe:*)",
+      "Bash(uv --version:*)",
+      "Bash(uvx:*)",
+      "Bash(where.exe uv)",
+      "Bash(timeout 30 uvx:*)",
+      "Bash(claude mcp list)",
+      "Read(//c/Users/永井秀和/.serena/**)",
+      "mcp__serena__check_onboarding_performed",
+      "mcp__serena__activate_project",
+      "mcp__serena__onboarding",
+      "mcp__serena__list_dir",
+      "mcp__serena__read_file",
+      "mcp__serena__get_symbols_overview",
+      "mcp__serena__write_memory",
+      "mcp__serena__list_memories",
+      "mcp__serena__get_current_config",
+      "mcp__serena__read_memory",
+      "mcp__serena__find_symbol",
+      "mcp__serena__search_for_pattern",
+      "mcp__serena__find_file",
+      "Bash(Select-String -Pattern \"大きなDLL|Qt5Core|Qt5Gui|opengl32sw|含まれている|含まれていない\" -Context 0,0)",
+      "Bash(copy \"BA_venvでパッケージ化__給与計算検定1級入力アプリ__試作V1__ccc__ddd.ps1\" \"backup\\BA_venvでパッケージ化__給与計算検定1級入力アプリ__試作V1__ccc__ddd_20251109_1659_09.ps1\")",
+      "WebSearch",
+      "Bash(copy \".vscode\\launch.json\" \"for_claude\\launch_20251110_backup.json\")",
+      "Bash(cmd /c copy \".vscode\\launch.json\" \"for_claude\\launch_20251110_backup.json\")"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "serena"
+  ]
+}

@@ -1,0 +1,8 @@
+# なし
+^(?!\s*#).*print.*
+
+# あり
+^.*#.*print.*
+
+
+self.main_window.show_dd_list_widget(self.main_window.get_focused_line_edit_obj()) # ddリストを表示

@@ -1,0 +1,39 @@
+# -*- mode: python ; coding: utf-8 -*-
+
+
+a = Analysis(
+    ['X:\\MAIN_APP.py'],
+    pathex=[],
+    binaries=[],
+    datas=[('X:\\AutoHotkey64_2.0.18.exe', '.'), ('X:\\_icon\\icon.ico', '.'), ('X:\\_ime_control.ahk', '.'), ('X:\\_icon\\ccw.ico', '.'), ('X:\\_icon\\cw.ico', '.'), ('X:\\_icon\\fit_h.ico', '.'), ('X:\\_icon\\fit_w.ico', '.'), ('X:\\_icon\\reset_scale.ico', '.'), ('X:\\_icon\\zoomin.ico', '.'), ('X:\\_icon\\zoomout.ico', '.'), ('X:\\_icon\\screen_mode.ico', '.'), ('X:\\_icon\\encode_check.ico', '.')],
+    hiddenimports=[],
+    hookspath=[],
+    hooksconfig={},
+    runtime_hooks=[],
+    excludes=['ipykernel', 'ipython', 'jupyter', 'jupyter_core', 'jupyter_client', 'notebook', 'nbformat', 'nbconvert', 'traitlets', 'PIL', 'Pillow', 'matplotlib', 'scipy', 'sympy', 'tkinter', '_tkinter', 'PyQt5.QtWebEngine', 'PyQt5.QtWebEngineCore', 'PyQt5.QtWebEngineWidgets', 'PyQt5.QtWebEngineProcess', 'PyQt5.QtMultimedia', 'PyQt5.QtMultimediaWidgets', 'PyQt5.QtNetwork', 'PyQt5.QtPositioning', 'PyQt5.QtQml', 'PyQt5.QtQuick', 'PyQt5.QtQuickWidgets', 'PyQt5.QtSensors', 'PyQt5.QtSerialPort', 'PyQt5.QtSql', 'PyQt5.QtSvg', 'PyQt5.QtTest', 'PyQt5.QtWebSockets', 'PyQt5.QtXml', 'PyQt5.QtXmlPatterns', 'PyQt5.Qt3DCore', 'PyQt5.Qt3DRender', 'PyQt5.QtBluetooth', 'PyQt5.QtDBus', 'PyQt5.QtDesigner', 'PyQt5.QtHelp', 'PyQt5.QtLocation', 'PyQt5.QtNfc', 'PyQt5.QtOpenGL', 'PyQt5.QtPrintSupport', 'PyQt5.QtWinExtras', 'unittest', 'test', 'doctest', 'pdb', 'pydoc', 'pydoc_data', 'mypy', 'typing_extensions', 'pylint', 'flake8', 'http', 'urllib3', 'requests', 'flask', 'django', 'cryptography', 'lxml', 'BeautifulSoup', 'sqlite3', 'sqlalchemy', 'asyncio', 'concurrent'],
+    noarchive=False,
+    optimize=0,
+)
+pyz = PYZ(a.pure)
+
+exe = EXE(
+    pyz,
+    a.scripts,
+    a.binaries,
+    a.datas,
+    [],
+    name='給与計算検定1級入力アプリ_試作V1',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=False,
+    upx_exclude=[],
+    runtime_tmpdir=None,
+    console=False,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+    icon=['X:\\_icon\\icon.ico'],
+)

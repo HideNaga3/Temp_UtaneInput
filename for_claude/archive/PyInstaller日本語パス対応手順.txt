@@ -1,0 +1,321 @@
+===============================================================================
+PyInstaller日本語パス対応手順 - PowerShell版 (X:ドライブ + Y:ドライブ作戦)
+===============================================================================
+
+■ 概要
+日本語パスが含まれる環境でPyQt5アプリケーション（Python 3.11.x環境）を
+PyInstallerでEXE化する際の文字化けエラーを解決する方法。
+PowerShellスクリプトとバッチファイルの組み合わせで簡単に実行可能。
+
+■ 問題
+- 日本語ユーザー名やフォルダ名が含まれるパス環境
+- PyQt5のプラグインディレクトリで文字化け (?????)
+- PyInstallerのモジュール解析エラー
+- "Qt plugin directory does not exist" エラー
+
+■ 解決原理
+1. Python本体をY:ドライブにsubst（英数字パス化）
+2. プロジェクトフォルダをX:ドライブにsubst（英数字パス化）
+3. 環境変数で両者を適切に連携させる
+4. PowerShellで変数管理を簡潔にし、配列でオプションを見やすく定義
+
+===============================================================================
+■ システム要件
+===============================================================================
+
+1. Windows環境（Windows 10/11）
+2. Python 3.11.x がインストール済み
+   - 場所: C:\Users\[ユーザー名]\AppData\Local\Programs\Python\Python311
+   - 確認方法: python --version
+3. 仮想環境(.venv)が作成済み
+4. PyInstallerが仮想環境にインストール済み
+5. PyQt5が仮想環境にインストール済み
+6. PowerShell実行ポリシーがBypass可能
+
+■ フォルダ構成例
+プロジェクトフォルダ/
+├── .venv/              # 仮想環境
+├── MAIN_APP.py         # メインアプリケーション（任意の名前）
+├── _icon/              # アイコンやリソース（任意）
+│   └── icon.ico        # アイコンファイル（任意）
+├── requirements.txt    # 依存関係
+├── BA_venvでパッケージ化__[アプリ名]__[バージョン]__[追加1]__[追加2].ps1
+└── BA_venvでパッケージ化_PS1起動.bat
+
+※ メインファイル名やフォルダ構成は自由に変更可能
+
+===============================================================================
+■ ファイル命名規則
+===============================================================================
+
+PowerShellスクリプト名:
+BA_venvでパッケージ化__[アプリ名]__[バージョン]__[追加情報1]__[追加情報2].ps1
+
+例: BA_venvでパッケージ化__PDF編集アプリ__試作V3__ccc__ddd.ps1
+
+スクリプト実行時に以下の変数が自動設定される:
+- $var1 = PDF編集アプリ
+- $var2 = 試作V3
+- $var3 = ccc
+- $var4 = ddd
+
+出力ファイル名: [var1]_[var2].exe (例: PDF編集アプリ_試作V3.exe)
+
+バッチファイル名:
+BA_venvでパッケージ化_PS1起動.bat
+
+このバッチファイルは同名（.ps1拡張子）のPowerShellスクリプトを自動的に実行します。
+
+===============================================================================
+■ 実行手順
+===============================================================================
+
+【方法1】バッチファイルから実行（推奨）
+1. BA_venvでパッケージ化_PS1起動.bat をダブルクリック
+2. 自動的に同名の.ps1ファイルが実行される
+3. PyInstallerの実行を待機
+4. 成功すればEXEファイルがdistフォルダに作成される
+
+【方法2】PowerShellスクリプトを直接実行
+1. PowerShellを開く
+2. 以下のコマンドを実行:
+   powershell -ExecutionPolicy Bypass -File "BA_venvでパッケージ化__PDF編集アプリ__試作V3__ccc__ddd.ps1"
+
+■ 実行時の表示例
+=== 環境変数設定後 ===
+VIRTUAL_ENV: X:\.venv
+PYTHONHOME: Y:
+PYTHONPATH: X:\.venv\Lib\site-packages;X:\
+TEMP: X:\temp
+========================
+
+var1 = PDF編集アプリ
+var2 = 試作V3
+var3 = ccc
+var4 = ddd
+
+=== PyInstaller実行中 ===
+（PyInstallerのログ出力）
+
+EXEファイルの作成を確認しました: X:\dist\PDF編集アプリ_試作V3.exe
+EXEファイルの場所: C:\Users\...\dist\PDF編集アプリ_試作V3.exe
+
+===================================
+処理が完了しました
+===================================
+
+===============================================================================
+■ PowerShell版の利点
+===============================================================================
+
+1. **変数展開がシンプル** - $変数名で直接展開、バッチの複雑な!変数!不要
+2. **配列でオプション管理** - @()で見やすく改行可能
+3. **色付き出力** - Write-Host -ForegroundColorで視認性向上
+4. **エラーハンドリング** - PowerShellの豊富な機能を活用
+5. **パス操作が簡単** - Test-Path, Copy-Item, Remove-Itemなど直感的
+6. **コメントが柔軟** - #で簡潔にコメント可能
+7. **文字コード対応** - UTF-8 BOM付きで日本語メッセージも問題なし
+
+===============================================================================
+■ トラブルシューティング
+===============================================================================
+
+【エラー1】"No module named 'encodings'"
+→ PYTHONHOME設定の問題。Y:ドライブが正しくマウントされているか確認
+
+【エラー2】"Qt plugin directory does not exist"
+→ 日本語パスが混入。環境変数PYTHONPATHを確認
+
+【エラー3】PowerShell実行ポリシーエラー
+→ バッチファイルから実行するか、-ExecutionPolicy Bypassオプション使用
+
+【エラー4】ドライブが削除できない
+→ 他のプロセスがドライブを使用中。手動で subst X: /d, subst Y: /d を実行
+
+【エラー5】文字化けが発生
+→ PowerShellスクリプトがUTF-8 BOM付きで保存されているか確認
+
+===============================================================================
+■ 制限事項・注意点
+===============================================================================
+
+1. substコマンドは一時的なマウント（再起動で消去）
+2. 他のアプリケーションがX:、Y:ドライブを使用していると競合
+3. 会社環境では管理者権限が必要な場合がある
+4. Python本体のパスは環境により異なるため、スクリプト内で要調整
+5. メインファイル名が異なる場合、スクリプト内で変更が必要
+6. X:ドライブはプロジェクトフォルダ自体なので、dist/buildは直接作成される
+7. buildフォルダは次回ビルドの高速化のため残す（削除しない）
+
+===============================================================================
+■ 成功時の出力ファイル
+===============================================================================
+
+- ファイル名: [アプリ名]_[バージョン].exe
+- サイズ: 約50-80MB（PyQt5アプリの場合）
+- 場所: プロジェクトフォルダ/dist/[アプリ名]_[バージョン].exe
+- 実行: ダブルクリックで起動可能
+- 依存関係: 実行時にPythonインストール不要
+- 付随ファイル: build/フォルダは次回ビルド用に保持
+
+===============================================================================
+■ 他のプロジェクトでの使用方法
+===============================================================================
+
+【1. Python本体パスの確認・調整】
+PowerShellで以下を実行:
+> python -c "import sys; print(sys.executable)"
+
+結果をスクリプト内の以下の部分に反映:
+cmd /c "subst Y: `"C:\Users\[ユーザー名]\AppData\Local\Programs\Python\Python3XX`""
+
+【2. メインファイル名の変更】
+MAIN_APP.py 以外の場合、スクリプト内で変更:
+- 対象行: "X:\MAIN_APP.py"
+- 変更例: "X:\app.py"
+
+【3. アイコンファイルの調整】
+アイコンが不要または場所が異なる場合:
+- "--add-data", "X:\_icon\icon.ico;." を削除または変更
+- "--icon", "X:\_icon\icon.ico" を削除または変更
+
+【4. 除外モジュールの調整】
+Jupyter系モジュールを使用する場合:
+- --exclude-module の該当行を削除
+
+【5. ファイル名の変更】
+新しいプロジェクトでは:
+1. BA_venvでパッケージ化__[新アプリ名]__[新バージョン]__xx__yy.ps1 にリネーム
+2. BA_venvでパッケージ化_PS1起動.bat はそのままコピー
+3. スクリプト内のPython本体パス、メインファイル名を調整
+
+===============================================================================
+■ 参考情報
+===============================================================================
+
+開発日: 2025年10月17日
+対象Python: 3.11.x（3.11.7で動作確認済み）
+PyInstaller: 6.14.0以上推奨
+対象ライブラリ: PyQt5
+OS: Windows 10/11
+スクリプト言語: PowerShell 5.1以上
+
+この手順により、会社のパソコンなど制約の多い環境でも、
+日本語パス問題を回避してPythonアプリケーションのEXE化が可能。
+
+===============================================================================
+■ サンプルファイル
+===============================================================================
+
+【ファイル1】BA_venvでパッケージ化_PS1起動.bat
+------------------------------------------------------------------------
+@echo off
+powershell -ExecutionPolicy Bypass -File "%~dpn0.ps1"
+pause
+------------------------------------------------------------------------
+
+【ファイル2】BA_venvでパッケージ化__PDF編集アプリ__試作V3__ccc__ddd.ps1
+------------------------------------------------------------------------
+# PowerShellスクリプト - PyInstaller日本語パス対応
+
+# このスクリプトが存在するディレクトリを取得
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+Set-Location $ScriptDir
+
+# 既存のX:, Y:ドライブを削除（エラーは無視）
+cmd /c "subst X: /d 2>nul"
+cmd /c "subst Y: /d 2>nul"
+
+# Python本体をY:ドライブにマップ
+cmd /c "subst Y: `"C:\Users\永井秀和\AppData\Local\Programs\Python\Python311`""
+
+# プロジェクトフォルダをX:ドライブにマップ
+cmd /c "subst X: `"$ScriptDir`""
+
+# 環境変数設定
+$env:VIRTUAL_ENV = "X:\.venv"
+$env:PYTHONHOME = "Y:"
+$env:PYTHONPATH = "X:\.venv\Lib\site-packages;X:\"
+$env:PATH = "Y:;Y:\Scripts;X:\.venv\Scripts;$env:PATH"
+$env:TEMP = "X:\temp"
+
+# TEMPディレクトリ作成
+if (-not (Test-Path "X:\temp")) {
+    New-Item -ItemType Directory -Path "X:\temp" | Out-Null
+}
+
+Write-Host "=== 環境変数設定後 ===" -ForegroundColor Cyan
+Write-Host "VIRTUAL_ENV: $env:VIRTUAL_ENV"
+Write-Host "PYTHONHOME: $env:PYTHONHOME"
+Write-Host "PYTHONPATH: $env:PYTHONPATH"
+Write-Host "TEMP: $env:TEMP"
+Write-Host "========================" -ForegroundColor Cyan
+
+# バッチファイル名からパラメータ取得
+$batname = [System.IO.Path]::GetFileNameWithoutExtension($MyInvocation.MyCommand.Name)
+$parts = $batname -split '__'
+$var1 = $parts[1]
+$var2 = $parts[2]
+$var3 = $parts[3]
+$var4 = $parts[4]
+
+Write-Host "var1 = $var1"
+Write-Host "var2 = $var2"
+Write-Host "var3 = $var3"
+Write-Host "var4 = $var4"
+
+# PyInstallerオプションを配列で定義（見やすく改行）
+$PyInstallerArgs = @(
+    "--onefile"
+    "--noconsole"
+    "--name", "$var1`_$var2"
+    "--distpath", "X:\dist"
+    "--workpath", "X:\build"
+    "--specpath", "X:\"
+    "--exclude-module", "ipykernel"
+    "--exclude-module", "ipython"
+    "--exclude-module", "jupyter"
+    "--exclude-module", "jupyter_core"
+    "--exclude-module", "jupyter_client"
+    "--exclude-module", "notebook"
+    "--exclude-module", "nbformat"
+    "--exclude-module", "nbconvert"
+    "--exclude-module", "traitlets"
+    "--add-data", "X:\_icon\icon.ico;."
+    "--icon", "X:\_icon\icon.ico"
+    "X:\MAIN_APP.py"
+)
+
+# PyInstaller実行
+Write-Host "`n=== PyInstaller実行中 ===" -ForegroundColor Green
+& "X:\.venv\Scripts\pyinstaller.exe" @PyInstallerArgs
+
+# 実行結果の確認
+if (Test-Path "X:\dist\$var1`_$var2.exe") {
+    Write-Host "`nEXEファイルの作成を確認しました: X:\dist\$var1`_$var2.exe" -ForegroundColor Green
+    Write-Host "EXEファイルの場所: $ScriptDir\dist\$var1`_$var2.exe" -ForegroundColor Yellow
+} else {
+    Write-Host "`nEXEファイルの作成に失敗しました。" -ForegroundColor Red
+    Write-Host "distフォルダを確認してください: $ScriptDir\dist\" -ForegroundColor Red
+}
+
+# クリーンアップ（tempとspecファイルのみ削除、buildとdistは残す）
+if (Test-Path "X:\temp") { Remove-Item "X:\temp" -Recurse -Force }
+Get-ChildItem "X:\*.spec" -ErrorAction SilentlyContinue | Remove-Item -Force
+
+# 元のディレクトリに戻る
+Set-Location $ScriptDir
+
+# ドライブのマウント解除
+cmd /c "subst X: /d"
+cmd /c "subst Y: /d"
+
+Write-Host "`n===================================" -ForegroundColor Cyan
+Write-Host "処理が完了しました" -ForegroundColor Green
+Write-Host "===================================" -ForegroundColor Cyan
+
+# テスト中はコメントアウト
+# Read-Host "`n続行するには何かキーを押してください"
+------------------------------------------------------------------------
+
+===============================================================================

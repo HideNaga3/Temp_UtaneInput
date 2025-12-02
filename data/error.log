@@ -1,0 +1,470 @@
+2025-11-09 12:47:29,631 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3085, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 113, in __init__
+    self.initializer()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 1200, in initializer
+    self._init_dataframe_and_paths()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 839, in _init_dataframe_and_paths
+    self.init_graphics_view_pdf()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 2099, in init_graphics_view_pdf
+    first_file_name = self.pdf_page_list[0]['file_name']
+                      ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ [_lib._create_logger]
+2025-11-09 12:47:29,631 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3085, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 113, in __init__
+    self.initializer()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 1200, in initializer
+    self._init_dataframe_and_paths()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 839, in _init_dataframe_and_paths
+    self.init_graphics_view_pdf()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 2099, in init_graphics_view_pdf
+    first_file_name = self.pdf_page_list[0]['file_name']
+                      ~~~~~~~~~~~~~~~~~~^^^
+IndexError: list index out of range
+ [_lib._create_logger]
+2025-11-09 14:02:45,330 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3083, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 102, in __init__
+    self.mode_config_manager: ModeConfigManager = ModeConfigManager(create_data_list, create_frame_list)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\_mode_config.py", line 71, in __init__
+    self._init_all_modes()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\_mode_config.py", line 96, in _init_all_modes
+    frame_list=self.create_frame_list('utane2'),
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\_create_data_list.py", line 231, in create_frame_list
+    frame_a_names = [x for x in data_list['frame_a_name']]
+                                ~~~~~~~~~^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+ [_lib._create_logger]
+2025-11-09 19:32:49,592 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3083, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 102, in __init__
+    self.mode_config_manager: ModeConfigManager = ModeConfigManager(create_data_list, create_frame_list)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\_mode_config.py", line 70, in __init__
+    self.mode = self.modes[self.main_mode]  # ãƒ¢ãƒ¼ãƒ‰è¨­å®šã‚’åˆæœŸåŒ–
+                ~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'utane2'
+ [_lib._create_logger]
+2025-11-09 19:33:35,196 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3083, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 102, in __init__
+    self.mode_config_manager: ModeConfigManager = ModeConfigManager(create_data_list, create_frame_list)
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\_mode_config.py", line 72, in __init__
+    self._init_all_modes()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\_mode_config.py", line 88, in _init_all_modes
+    self.modes['utane2'] = ModeConfig(
+                           ^^^^^^^^^^^
+TypeError: ModeConfig.__init__() got an unexpected keyword argument 'label_font_point'
+ [_lib._create_logger]
+2025-11-09 19:34:53,507 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3083, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 113, in __init__
+    self.initializer()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 1200, in initializer
+    self._init_dataframe_and_paths()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 833, in _init_dataframe_and_paths
+    self.initializer_sub()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 1233, in initializer_sub
+    label.setFont(label_point)
+TypeError: setFont(self, a0: QFont): argument 1 has unexpected type 'int'
+ [_lib._create_logger]
+2025-11-09 19:34:53,507 [ERROR] Traceback (most recent call last):
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 3083, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\MAIN_APP.py", line 113, in __init__
+    self.initializer()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 1200, in initializer
+    self._init_dataframe_and_paths()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 833, in _init_dataframe_and_paths
+    self.initializer_sub()
+  File "C:\MyPython\_QtDesigner\__CURRENT\_revbell_input_app_payroll\_lib\initializer_mixin.py", line 1233, in initializer_sub
+    label.setFont(label_point)
+TypeError: setFont(self, a0: QFont): argument 1 has unexpected type 'int'
+ [_lib._create_logger]
+2025-11-10 10:37:05,543 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:37:05,543 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:37:21,762 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:37:21,762 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:39:11,646 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:39:11,646 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:42:25,003 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:42:25,003 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:43:11,262 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:43:11,262 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:46:40,731 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:46:40,731 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:54:39,630 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 10:54:39,630 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 11:03:23,990 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 11:03:23,990 [ERROR] Traceback (most recent call last):
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\æ°¸äº•ç§€å’Œ\Documents\workspace\rvbell_app\çµ¦ä¸è¨ˆç®—æ¤œå®šå…¥åŠ›ã‚½ãƒ•ãƒˆ_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 11:05:19,449 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 11:05:19,449 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3086, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 119, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 98, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 12:07:33,514 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3087, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 101, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 103, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 21, in __init__
+    self.is_frozen = self.main_window.is_frozen
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'is_frozen'
+ [_lib._create_logger]
+2025-11-10 12:09:02,203 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3088, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 101, in __init__
+    self.is_frozen = is_frozen()
+                     ^^^^^^^^^
+NameError: name 'is_frozen' is not defined
+ [_lib._create_logger]
+2025-11-10 12:09:31,824 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3088, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 102, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 103, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 23, in __init__
+    self.mode_config_manager = self.main_window.mode_config_manager
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'mode_config_manager'
+ [_lib._create_logger]
+2025-11-10 12:09:52,170 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3088, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 105, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 103, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]
+2025-11-10 12:12:27,355 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3088, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 104, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 103, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 23, in __init__
+    self.mode_config_manager = self.main_window.mode_config_manager
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'mode_config_manager'
+ [_lib._create_logger]
+2025-11-10 12:13:22,179 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3088, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 104, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 103, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 23, in __init__
+    self.mode_config_manager = self.main_window.mode_config_manager
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'mode_config_manager'
+ [_lib._create_logger]
+2025-11-10 12:13:57,327 [ERROR] Traceback (most recent call last):
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 3088, in <module>
+    window = MyMainWindow()
+             ^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\MAIN_APP.py", line 105, in __init__
+    self.data_transformer = DataTransformerFactory(parent=self).get_transformer()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 103, in get_transformer
+    return Utane2(self.main_window)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\‰iˆäG˜a\Documents\workspace\rvbell_app\‹‹—^ŒvZŒŸ’è“ü—Íƒ\ƒtƒg_20251015\_lib\_data_transform.py", line 25, in __init__
+    self.insert_char = self.main_window.insert_char
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MyMainWindow' object has no attribute 'insert_char'
+ [_lib._create_logger]

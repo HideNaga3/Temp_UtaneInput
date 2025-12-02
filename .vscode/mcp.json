@@ -1,0 +1,19 @@
+{
+  "inputs": [],
+  "servers": {
+    "serena": {
+      "command": "Y:/.local/bin/uvx.exe",
+      "args": [
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--enable-web-dashboard",
+        "false"
+      ],
+      "env": {
+        "PROJECT_ROOT": "${workspaceFolder}"
+      }
+    }
+  }
+}
